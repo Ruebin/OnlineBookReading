@@ -1,0 +1,101 @@
+{
+    "tables":[
+      [
+      {
+          "menu":"训练智能对话技能的总体流程",
+          "active":true,
+          "content":"<img width=\"622px\" height='321px' src=\"https://ai.bdstatic.com/file/2DCEF8C4D2174B61BFE909F3728FB15C\" alt=\"\">"
+  
+       },
+      {
+          "menu":"步骤1：创建一个UNIT机器人",
+          "active":false,
+          "content":"进入百度AI开放平台，在开发平台中找到智能对话定制平台UNIT并进入，或者直接点击以下链接：<br>https://ai.baidu.com/tech/unit<br>点击立即使用进入UNIT智能对话与服务平台<br><img width=\"622px\" height='321px' src=\"http://tva1.sinaimg.cn/large/007X8olVly1g7tifw10m7j31b40ptwgf.jpg\" alt=\"\"><br>进入UNIT后可以在我的机器人中新建一个机器人<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/10/157072073116c63de242cca30b2.png\" alt=\"\"><br>我们给它起名叫做母婴知识机器人<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/10/15707208761eaf70f48f4a9710f.png\" alt=\"\"><br>完成后点击创建机器人即刻创建一个智能对话机器人"
+
+        },
+      {
+          "menu":"步骤2：创建问答技能",
+          "active":false,
+          "content":"<img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/10/imaged9d581384966dbbc.png\" alt=\"\"><br>在步骤1中，我们完成了UNIT机器人的创建，可以看到，我们的机器人目前还是什么技能都没有的，我们要让机器人具备对话能力，就必须自己来给机器人创建技能<br>现在，我们点击添加技能按钮<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/10/image4551d83ae122e14e.png\" alt=\"\"><br>但是我们可以看到，在我们的技能库中没有技能，或者没有我们想要的技能，于是我们可以去技能管理页进行自定义技能<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/10/imagea40a8e158e909bbd.png\" alt=\"\"><br>我们首先要让机器人可以回答母婴相关的问题，所以我们在创建方式中先选择问答技巧。接下来我们需要输入技能名称，就叫母婴问答好了<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/10/image9ba2cc2abae5ee9e.png\" alt=\"\"><br>我们现在就可以添加问答了<br>如下图所示，我们可以根据数据库中整理的问题进行导入，设置标签能帮助管理问答对，提升技能理解能力。<br>配置多个相似问题可以帮助快速导向用户所需答案。<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/10/imagebdab3616fd90fa01.png\" alt=\"\">>"
+   
+        },
+      {
+          "menu":"步骤3：创建对话技能",
+          "active":false,
+          "content":"我们刚刚演示了如何创建一个问答技能，问答技能一般是有固定答案，固定问法，可拓展性比较低，而对话技能能让用户的用户体验上升一个层面。<br>我们按照刚才的方法创建一个对话技能，就叫能不能吃<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/11/image466feb353d01df76.png\" alt=\"\"><br>创建完后就进入技能定义的阶段，技能又分自定义技能和预置技能，每个技能都是由多个相关的意图组成，这个阶段的新建意图就对应我们需求分析阶段的功能定义。<br>点击【能不能吃】技能，进入技能模块，在自定义技能中【新建对话意图】：<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/11/imagea2cd9beaec6df736.png\" alt=\"\"><br>如上图，我们先配置一个基础提问。当用户做出类似提问时，可以进行一个反问。<br>接下来，我们基于基础问题的反问进行设置回答。<br>创建一个意图，意图名为婴儿 <br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/11/image0bdefc3896e7e865.png\" alt=\"\"><br>对话回应设置为答复，然后我们要设置触发规则，范围选择上轮对话意图，关系选择等于我们之前设置的第一个问题，这样子，这个意图就只有在先前提问后才会触发。<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/11/imagee71c4946eb2edfa6.png\" alt=\"\"><br>经过步步诱导用户提问“能不能吃？”，“谁能不能吃？”之后，我们要诱导用户选择“能不能吃什么？”，这样就诱导用户形成了一整个问题的提问，我们也可以根据问题设置答案。如下图<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/11/image03f59850992805a7.png\" alt=\"\"><br>这样子，我们的基本问答就设置好了，接下来，我们要设置的是对话模板，设置对话模板的目的是让我们的机器人知道识别用户的提问<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/11/imaged10164504166024c.png\" alt=\"\"><br>我们先设置特征词，当识别到这些词的时候，机器人就知道是在提问什么了。<br>然后我们选择添加对话模板，选择“能不能吃”意图，选择模板片段，为刚刚新建的特征词：“吃”、“食物”，必须匹配选择“是”  <br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/11/image727a94e73032879c.png\" alt=\"\"><br>然后我们分别为“给谁吃”里面的婴儿配置特征词：婴儿<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/11/image727a94e73032879c.png\" alt=\"\"><br>“吃什么”里面选择配置特征词：芒果  <br> <img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/11/image4076c8a1f46b90bc.png\" alt=\"\"><br>到此，我们的对话技能就设置完成了，我们通过技能训练，点击训练并生效新模型，然后等待1分钟左右，就训练完成了。<br> <img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/11/image1ec7f421948fd3d4.png\" alt=\"\"><br>点击测试，就可以测试我们的技能情况了：<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/11/image0b565ecfb19de626.png\" alt=\"\"><br>根据提示，我们可以输入刚刚设置过的婴儿  <br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/11/image840458a764dbfb41.png\" alt=\"\"><br>然后输入芒果，就可以得到我们刚刚输入的答案了<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/11/image970eef01b99865ce.png\" alt=\"\"><br>那现在我们来看看如果用户只输入食物，而不输入时期会发送什么<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/11/image759020d2b7c23d0f.png\" alt=\"\"><br>这就是刚刚设置触发规则的妙用啦。<br>现在，我们可以为机器人配置上这两个对话技能了。但是配置一个完整的UNIT让母婴AI小助手到目前为止还是远远不足的，我们还需要收集大量的数据，以及精美的UI设计。"
+    
+       }
+    ],
+    [
+          {
+          "menu":" 野生生物分类总体流程",
+          "active":true,
+          "content":"<img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/14/15710323711769524782dd0457f.png\" alt=\"\">"
+           },
+           {
+          "menu":"步骤1：采集需要用来训练的图像",
+          "active":false,
+          "content":"我们需要收集的图像分为两部分，一个部分就是已经分类好的不同野生动物的图像，另一部分是用来测试模型的图像。课程已经提前准备好数据。"
+          },
+          {
+            "menu":"步骤2：创建一个图像分类模型",
+            "active":false,
+            "content":"进入百度AI开放平台，在开发平台中找到EasyDL定制图像分类并进入，或者直接点击以下链接： <br>https://ai.baidu.com/easydl/image_classification <br>点击开始训练<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/14/image11dd9654759d3dbf.png\" alt=\"\"><br>进去后点击创建模型，填入名称联系方式，加以功能描述，点击下一步<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/14/image3336cb4564ea5c12.png\" alt=\"\"><br>然后我就可以看到已经创建完成的模型，模型现在还什么内容都没有"
+          },
+          {
+            "menu":"步骤3：创建问答技能",
+            "active":false,
+            "content":"我们点击我的数据集，然后上传我们提前准备好的照片 <br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/14/image78952cb3ae0439df.png\" alt=\"\"><br>点击保存可以保存我们的数据集<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/14/image1224167194038154.png\" alt=\"\"><br>这里我们需要等待一段让百度图像分类平台进行处理<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/14/image1e7e60ef0691d87d.png\" alt=\"\"><br>然后把三个分类都勾选上  <br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/14/image10bcfb145068fb0f.png\" alt=\"\"><br>然后点击开始训练 <br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/14/imagee44c86a7837e42fe.png\" alt=\"\"><br>训练需要一定的时间，我们耐心等待训练的完成"
+          },
+          {
+            "menu":"步骤4：训练模型 ",
+            "active":false,
+            "content":"至此，我们已经创建完成了一个模型和一个数据集，接下来，我们要针对数据集进行训练。<br>在模型中心选择训练模型，选择通用算法，默认训练方式<br>"
+          },
+          {
+            "menu":"步骤5：校验模型  ",
+            "active":false,
+            "content":"到这里，我们已经基本完成了我们的图像分类训练，就可以开始检验我们的训练效果了。<br>在校验模型中点击启动，等待5分钟左右 <br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/14/image3088b0b26b2bd4ac.png\" alt=\"\"><br>可以看到，当前模型的准确度达到97%以上，我们点击添加图片，选择提前准备好的但没有经过训练的同类型图像就可以看到我们的模型训练结果了<br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/14/image60d1ee02d8312aa2.png\" alt=\"\"><br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/14/image9e1c1be6c385136d.png\" alt=\"\">"
+          }    
+    ],
+    [
+      {
+        "menu":"野生生物分类总体流程",
+        "active":true,
+        "content":"<img width=\"622px\" height='321px' src=\"https://ai.bdstatic.com/file/C29E65296C654DA4A4084E45BC3D0711\">"
+      },
+      {
+        "menu":"步骤1：采集需要用来训练的图像",
+        "active":false,
+        "content":"根据品牌商陈列活动要求，前期采集图像正、负样本"
+      },
+      {
+        "menu":"步骤2：创建一个图像分类模型",
+        "active":false,
+        "content":"进入百度AI开放平台，在开发平台中找到EasyDL零售版商品检测并进入，或者直接点击以下链接<br>https://ai.baidu.com/easydl/retail"
+      },
+      {
+        "menu":"步骤3：创建模型  ",
+        "active":false,
+        "content":"进去后点击创建模型，应用场景选择普通货架/货柜，填入名称联系方式，加以功能描述，点击下一步  <br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/14/image0bda04e98e5d89ec.png\">"
+      },
+      {
+        "menu":"步骤4： 创建SKU并上传图片",
+        "active":false,
+        "content":"在我的模型中可以看到刚刚创建的模型，我们点击创建SKU来创建一个SKU <br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/14/imaged449b02fbdb00606.png\"><br>我们看到SKU创建页面，可以输入商品SKU名称、品牌名称、规格参数、商品品类、包装类型 <br><img width=\"622px\" height='321px' src=\"https://www.s2tu.com/images/2019/10/14/imaged908003b071b3605.png\"><br>在这里，我们可以选择填入自己的商品，然后拍摄图片上传。<br>上传背景为纯色且与SKU主体色不相近的SKU单品图，需要覆盖到实际检测场景中SKU可能出现的所有角度和光照条件，以下为建议上传的SKU角度和图片数量<br>① 普通货架/货柜审核场景：水平视角、俯视视角和仰视视角各 10 张 <br>② 无人零售货柜场景：俯视视角 10 张  <br>③ 智能结算台场景：水平视角 10 张，俯视视角 10 张，可根据实际情况增加仰视视角 <br>④ 地堆商品审核场景：若SKU是较大的箱体，采集单品图难度较大，可尽量在实景图中覆盖需要检测的角度，无需上传单品图 <br>为了方便起见，我们选择EasyDL已经包含有图片的可口可乐。 <br><img width=\"622px\" height='321px' src=\"https://ai.bdstatic.com/file/21CCE7E113B24E07BB93A0AD729DFE89\">"
+      },
+      {
+        "menu":"步骤5： 实景图上传/标注",
+        "active":false,
+        "content":"这个步骤将会介绍如何上传和标注训练数据，训练数据是SKU在货架上的实景图，需要客户从真实的业务场景中采集，这些图片在被正确标注中，可以用于训练成模型<br>完成上一个步骤后，在左侧列表中点击【实景图上传/标注】进入上传和标注页面，在上传前请在实景图集选择栏内创建实景图集，如下图所示 <br><img width=\"622px\" height='321px' src=\"https://ai.bdstatic.com/file/11DBA759A86845BEAE93640B7888CC00\"><br>需要填写的项目如下： <br>实景图集名称 <br>实景图集的名称，可适当填入SKU细节，例如：原味可乐，番茄味薯片，奥运版纯牛奶等  <br>选择类型<br>实景图集的类型，请与创建模型时选择的应用场景保持一致，上传时只上传跟选择类型相同的实景图。可选项为普通货架/货柜、智能结算台、无人零售柜、地堆商品和其他 <br>完成创建实景图集后，页面显示为如下图所示的内容 <br><img width=\"622px\" height='321px' src=\"https://ai.bdstatic.com/file/313C5DE6E88042AF9FE92BB1B897DC76\"><br>点击页面上【标注】为该实景图集上传作为训练数据的实景图，点击【标注示例】右侧的加号上传实景图。<br>实景图基本要求如下：  <br>实景图片需要是从真实业务场景中采集来的数据<br>支持上传的图片格式为jpg，png，jpeg，bmp，大小限制为4M<br>建议图片尺寸：最长不超过4096px，最小不低于30px，长宽比3：1以内<br>标注基本要求如下：<br>完整并仅仅框选要识别的SKU<br>标注框不要框选到其它SKU或是价目标签等非要识别的SKU的干扰信息<br>在实景图中出现的所有要识别的SKU必须全部标注，不能遗漏<br>完成所有实景图的标注后，返回到【我的SKU库】可以查看到SKU列表中【实景图数】列显示标注了该SKU的实景图片的数量，如下图所示<br><img width=\"622px\" height='321px' src=\"https://ai.bdstatic.com/file/3417162926BA4F15956EFB8A38F877EB\">"
+      },
+      {
+        "menu":"步骤6：训练并校验模型",
+        "active":false,
+        "content":"<img width=\"622px\" height='321px' src=\"https://ai.bdstatic.com/file/516FE9213991416AAF93793E89652F0F\"><br>如上面图片所示，点击左侧列表中的【训练模型】，需要先后完成下面三项选择： <br>选择要训练的模型 <br>选择需要想要模型支持检测的SKU，选择完成后，下方左侧会显示已添加的SKU，右侧会显示包含已添加SKU的实景图集  <br>选择要参与训练的实景图集  <br>完成选择后，点击【开始训练】按钮页面跳转至【我的模型】页面，如下图所示，可以看到模型已进入训练状态，将鼠标移至状态\"训练中\"右边的小问号上，可以查看训练进度，训练进度数值只是作为参考，所以推荐打开短信通知功能，这样就第一时间知晓模型训练完成了<br><img width=\"622px\" height='321px' src=\"https://ai.bdstatic.com/file/0A1DD644818946CEAD22ACFF2933B4F7\"><br>训练完成后，可以点击校验和申请发布"
+      }
+    ]
+    
+    ]
+
+  }

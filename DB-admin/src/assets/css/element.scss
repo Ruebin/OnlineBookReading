@@ -1,0 +1,29 @@
+@import "./layout.scss";
+
+//按钮
+@mixin btn($size:14px,$color:#fff,$bgcolor:#F04752,$padding:5px,$radius:5px) {
+    padding: $padding;
+    background-color: $bgcolor;
+    border-radius: $radius;
+    color: $color;
+    border: 1px solid $bgcolor;
+    font-size: $size;
+    text-align: center;
+    line-height: 1;
+    display: inline-block;
+}
+
+//列表
+@mixin list($direction:row) {
+    @include flex($direction);
+}
+
+//面板
+@mixin panel($height:auto,$bgcolor:#fff,$padding:20px,$margin:10px 0) {
+    background-color: $bgcolor;
+    margin: $margin;
+    padding: $padding;
+    height: $height;
+    border: 1px solid #dddee1;
+    border-radius: 4px;
+}
