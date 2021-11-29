@@ -20,7 +20,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "iview": "^3.3.3",
-    "mavon-editor": "^2.7.5",
+    "mavon-editor": "^2.8.2",
     "pdfjs-dist": "^2.2.228",
     "postcss-plugin-px2rem": "^0.8.1",
     "sass": "^1.22.7",
